@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {}
+    "D:\\VB\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {
+    "D:\\VB\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
+        "projectUniqueName": "D:\\VB\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
         "projectName": "SystemPenyewaanMobil",
-        "projectPath": "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
-        "packagesPath": "C:\\Users\\ramad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\obj\\",
+        "projectPath": "D:\\VB\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
+        "packagesPath": "C:\\Users\\Leia\\.nuget\\packages\\",
+        "outputPath": "D:\\VB\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ramad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Leia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +43,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -48,6 +59,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.12, 5.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -56,7 +85,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
