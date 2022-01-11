@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {}
+    "C:\\Users\\Bayu\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {
+    "C:\\Users\\Bayu\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
+        "projectUniqueName": "C:\\Users\\Bayu\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
         "projectName": "SystemPenyewaanMobil",
-        "projectPath": "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
-        "packagesPath": "C:\\Users\\ramad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ramad\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\obj\\",
+        "projectPath": "C:\\Users\\Bayu\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\SystemPenyewaanMobil.vbproj",
+        "packagesPath": "C:\\Users\\Bayu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bayu\\source\\repos\\SystemPenyewaanMobil\\SystemPenyewaanMobil\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ramad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bayu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
