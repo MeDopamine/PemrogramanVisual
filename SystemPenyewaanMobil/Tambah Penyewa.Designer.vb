@@ -29,6 +29,7 @@ Partial Class Tambah_Penyewa
         Me.TxtNIK = New System.Windows.Forms.TextBox()
         Me.TxtNama = New System.Windows.Forms.TextBox()
         Me.BtnSimpan = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label3
@@ -89,11 +90,22 @@ Partial Class Tambah_Penyewa
         Me.BtnSimpan.Text = "Simpan"
         Me.BtnSimpan.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 9)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(297, 31)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Tambah Data Penyewa"
+        '
         'Tambah_Penyewa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(396, 293)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BtnSimpan)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -115,4 +127,5 @@ Partial Class Tambah_Penyewa
     Friend WithEvents TxtNIK As TextBox
     Friend WithEvents TxtNama As TextBox
     Friend WithEvents BtnSimpan As Button
+    Friend WithEvents Label4 As Label
 End Class

@@ -28,25 +28,27 @@ Partial Class UbahPenyewa
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.BtnSimpan = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TxtNama
         '
-        Me.TxtNama.Location = New System.Drawing.Point(99, 54)
+        Me.TxtNama.Location = New System.Drawing.Point(105, 77)
         Me.TxtNama.Name = "TxtNama"
         Me.TxtNama.Size = New System.Drawing.Size(227, 20)
         Me.TxtNama.TabIndex = 0
         '
         'TxtNIK
         '
-        Me.TxtNIK.Location = New System.Drawing.Point(99, 90)
+        Me.TxtNIK.Location = New System.Drawing.Point(105, 113)
         Me.TxtNIK.Name = "TxtNIK"
         Me.TxtNIK.Size = New System.Drawing.Size(227, 20)
         Me.TxtNIK.TabIndex = 1
         '
         'RtxAlamat
         '
-        Me.RtxAlamat.Location = New System.Drawing.Point(99, 129)
+        Me.RtxAlamat.Location = New System.Drawing.Point(105, 152)
         Me.RtxAlamat.Name = "RtxAlamat"
         Me.RtxAlamat.Size = New System.Drawing.Size(227, 96)
         Me.RtxAlamat.TabIndex = 2
@@ -55,7 +57,7 @@ Partial Class UbahPenyewa
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(29, 60)
+        Me.Label1.Location = New System.Drawing.Point(35, 83)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(35, 13)
         Me.Label1.TabIndex = 3
@@ -64,7 +66,7 @@ Partial Class UbahPenyewa
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(29, 93)
+        Me.Label2.Location = New System.Drawing.Point(35, 116)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(25, 13)
         Me.Label2.TabIndex = 4
@@ -73,17 +75,38 @@ Partial Class UbahPenyewa
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(29, 132)
+        Me.Label3.Location = New System.Drawing.Point(35, 155)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Alamat"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(32, 13)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(263, 31)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Ubah Data Penyewa"
+        '
+        'BtnSimpan
+        '
+        Me.BtnSimpan.Location = New System.Drawing.Point(257, 254)
+        Me.BtnSimpan.Name = "BtnSimpan"
+        Me.BtnSimpan.Size = New System.Drawing.Size(75, 23)
+        Me.BtnSimpan.TabIndex = 13
+        Me.BtnSimpan.Text = "Simpan"
+        Me.BtnSimpan.UseVisualStyleBackColor = True
+        '
         'UbahPenyewa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(395, 272)
+        Me.ClientSize = New System.Drawing.Size(395, 297)
+        Me.Controls.Add(Me.BtnSimpan)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -103,4 +126,6 @@ Partial Class UbahPenyewa
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents BtnSimpan As Button
 End Class
