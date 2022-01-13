@@ -1,17 +1,17 @@
-﻿Public Class InfoTambahPenyewa
-
+﻿Public Class Info_UbahPenyewa
     Public Sub New()
 
         ' This call is required by the designer.
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        LbNama.Text = Tambah_Penyewa.penyewa.GSNamaPenyewa
-        LbNIK.Text = Tambah_Penyewa.penyewa.GSNikPenyewa
-        LbAlamat.Text = Tambah_Penyewa.penyewa.GSAlamatPenyewa
+        LbNama.Text = UbahPenyewa.penyewa.GSNamaPenyewa
+        LbNIK.Text = UbahPenyewa.penyewa.GSNikPenyewa
+        LbAlamat.Text = UbahPenyewa.penyewa.GSAlamatPenyewa
     End Sub
     Private Sub BtnSimpan_Click(sender As Object, e As EventArgs) Handles BtnSimpan.Click
-        Tambah_Penyewa.penyewa.AddPenyewaDatabase(Tambah_Penyewa.penyewa.GSNamaPenyewa, Tambah_Penyewa.penyewa.GSNikPenyewa, Tambah_Penyewa.penyewa.GSAlamatPenyewa)
+        UbahPenyewa.penyewa.UpdatePenyewaDatabase(UbahPenyewa.id, UbahPenyewa.penyewa.GSNamaPenyewa,
+                                      UbahPenyewa.penyewa.GSNikPenyewa, UbahPenyewa.penyewa.GSAlamatPenyewa)
 
         Me.Close()
     End Sub

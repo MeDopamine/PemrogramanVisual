@@ -25,20 +25,21 @@ Partial Class FormPenyewa
         Me.DataGridViewPenyewa = New System.Windows.Forms.DataGridView()
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.BtnUbah = New System.Windows.Forms.Button()
+        Me.BtnHapus = New System.Windows.Forms.Button()
         CType(Me.DataGridViewPenyewa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridViewPenyewa
         '
         Me.DataGridViewPenyewa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewPenyewa.Location = New System.Drawing.Point(58, 38)
+        Me.DataGridViewPenyewa.Location = New System.Drawing.Point(12, 72)
         Me.DataGridViewPenyewa.Name = "DataGridViewPenyewa"
-        Me.DataGridViewPenyewa.Size = New System.Drawing.Size(466, 225)
+        Me.DataGridViewPenyewa.Size = New System.Drawing.Size(442, 225)
         Me.DataGridViewPenyewa.TabIndex = 0
         '
         'BtnTambah
         '
-        Me.BtnTambah.Location = New System.Drawing.Point(449, 269)
+        Me.BtnTambah.Location = New System.Drawing.Point(12, 43)
         Me.BtnTambah.Name = "BtnTambah"
         Me.BtnTambah.Size = New System.Drawing.Size(75, 23)
         Me.BtnTambah.TabIndex = 1
@@ -47,18 +48,28 @@ Partial Class FormPenyewa
         '
         'BtnUbah
         '
-        Me.BtnUbah.Location = New System.Drawing.Point(353, 269)
+        Me.BtnUbah.Location = New System.Drawing.Point(283, 43)
         Me.BtnUbah.Name = "BtnUbah"
         Me.BtnUbah.Size = New System.Drawing.Size(75, 23)
         Me.BtnUbah.TabIndex = 2
         Me.BtnUbah.Text = "Ubah"
         Me.BtnUbah.UseVisualStyleBackColor = True
         '
+        'BtnHapus
+        '
+        Me.BtnHapus.Location = New System.Drawing.Point(379, 43)
+        Me.BtnHapus.Name = "BtnHapus"
+        Me.BtnHapus.Size = New System.Drawing.Size(75, 23)
+        Me.BtnHapus.TabIndex = 3
+        Me.BtnHapus.Text = "Hapus"
+        Me.BtnHapus.UseVisualStyleBackColor = True
+        '
         'FormPenyewa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(576, 340)
+        Me.ClientSize = New System.Drawing.Size(476, 340)
+        Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.BtnUbah)
         Me.Controls.Add(Me.BtnTambah)
         Me.Controls.Add(Me.DataGridViewPenyewa)
@@ -72,4 +83,5 @@ Partial Class FormPenyewa
     Friend WithEvents DataGridViewPenyewa As DataGridView
     Friend WithEvents BtnTambah As Button
     Friend WithEvents BtnUbah As Button
+    Friend WithEvents BtnHapus As Button
 End Class

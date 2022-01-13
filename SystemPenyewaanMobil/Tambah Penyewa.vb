@@ -1,5 +1,5 @@
 ﻿Public Class Tambah_Penyewa
-    Dim penyewa As New Penyewa
+    Public Shared penyewa As New Penyewa
 
     Private Sub TxtNama_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtNama.KeyPress
         If Not Char.IsLetter(e.KeyChar) And Not e.KeyChar = Chr(Keys.Delete) And Not e.KeyChar = Chr(Keys.Back) Then
@@ -20,7 +20,9 @@
         penyewa.GSNikPenyewa = TxtNIK.Text
         penyewa.GSAlamatPenyewa = RtxAlamat.Text
 
-        penyewa.AddPenyewaDatabase(penyewa.GSNamaPenyewa, penyewa.GSNikPenyewa, penyewa.GSAlamatPenyewa)
+        Dim info As New InfoTambahPenyewa
+        info.Show()
+
         Me.Close()
     End Sub
 End Class

@@ -1,6 +1,6 @@
 ﻿Public Class UbahPenyewa
-    Private penyewa As New Penyewa
-    Private id As Integer
+    Public Shared penyewa As New Penyewa
+    Public Shared id As Integer
 
     Public Sub New()
 
@@ -33,8 +33,8 @@
         penyewa.GSNikPenyewa = TxtNIK.Text
         penyewa.GSAlamatPenyewa = RtxAlamat.Text
 
-        penyewa.UpdatePenyewaDatabase(id, penyewa.GSNamaPenyewa, penyewa.GSNikPenyewa, penyewa.GSAlamatPenyewa)
-
+        Dim info As New Info_UbahPenyewa()
+        info.Show()
         Me.Close()
     End Sub
 End Class

@@ -13,7 +13,6 @@
     End Sub
 
     Private Sub ReloadDataTableDatabase()
-        DataGridViewPenyewa.Dispose()
         DataGridViewPenyewa.DataSource = penyewa.GetDataPenyewaDatabase
     End Sub
     Private Sub FormPenyewa_Activated(sender As Object, e As EventArgs) Handles Me.Activated
