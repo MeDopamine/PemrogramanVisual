@@ -4,7 +4,6 @@ Public Class Penyewa
     Private nama As String
     Private nik As String
     Private alamat As String
-    Private penyewaDataTable As New ArrayList()
 
     Private server As String = "localhost"
     Private username As String = "root"
@@ -14,7 +13,6 @@ Public Class Penyewa
     Public Shared dbConn As New MySqlConnection
     Public Shared sqlCommand As New MySqlCommand
     Public Shared sqlRead As MySqlDataReader
-    Private sqlQuery As String
 
     Public Function GetDataPenyewaDatabase() As DataTable
         Dim result As New DataTable
@@ -66,6 +64,38 @@ Public Class Penyewa
 
         sqlRead.Close()
         dbConn.Close()
+    End Sub
+
+    Public Sub RemoveDataPenyewaDatabase(id As Integer)
+        dbConn.ConnectionString = "server = " + server + "; user id = " + username + ";" _
+            + "password = " + password + "; database = " + database + ";"
+
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "DELETE FROM penyewa WHERE id_penyewa = " & (id + 1) & " "
+        sqlRead = sqlCommand.ExecuteReader
+
+        sqlRead.Close()
+        dbConn.Close()
+
+        dbConn.Dispose()
+
+        SqlQueryData("ALTER TABLE penyewa DROP id_penyewa")
+        SqlQueryData("ALTER TABLE penyewa ADD id_penyewa INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;")
+    End Sub
+
+    Private Sub SqlQueryData(ByVal query As String)
+        dbConn.ConnectionString = "server = " + server + "; user id = " + username + ";" _
+           + "password = " + password + "; database = " + database + ";"
+
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = query
+        sqlRead = sqlCommand.ExecuteReader
+
+        sqlRead.Close()
+        dbConn.Close()
+        dbConn.Dispose()
     End Sub
     Public Property GSNamaPenyewa As String
         Get

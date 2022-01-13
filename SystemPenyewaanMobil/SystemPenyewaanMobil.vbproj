@@ -123,6 +123,12 @@
     <Compile Include="FormPenyewa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HapusPenyewa.Designer.vb">
+      <DependentUpon>HapusPenyewa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HapusPenyewa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Info UbahPenyewa.Designer.vb">
       <DependentUpon>Info UbahPenyewa.vb</DependentUpon>
     </Compile>
@@ -174,6 +180,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormPenyewa.resx">
       <DependentUpon>FormPenyewa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HapusPenyewa.resx">
+      <DependentUpon>HapusPenyewa.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Info UbahPenyewa.resx">
       <DependentUpon>Info UbahPenyewa.vb</DependentUpon>

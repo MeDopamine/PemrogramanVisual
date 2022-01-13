@@ -31,4 +31,9 @@
     Private Sub DataGridViewPenyewa_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewPenyewa.CellClick
         id = DataGridViewPenyewa.CurrentRow.Index
     End Sub
+
+    Private Sub BtnHapus_Click(sender As Object, e As EventArgs) Handles BtnHapus.Click
+        Dim hapus As New HapusPenyewa
+        hapus.Show()
+    End Sub
 End Class
